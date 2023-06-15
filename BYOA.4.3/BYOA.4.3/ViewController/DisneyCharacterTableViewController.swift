@@ -27,7 +27,7 @@ class DisneyCharacterTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int { // can delete becasue it will always return one cell but I like to leave it.
+    override func numberOfSections(in tableView: UITableView) -> Int { // can delete becasue it will always return one section but I like to leave it.
         
         return 1
     }

@@ -15,7 +15,7 @@ class DisneyCharacter {
 
     init(name: String, imageURL: String) {
         self.name = name
-        self.imageURL = imageURL
+        self.imageURL = imageURL 
     }
 
 
@@ -39,7 +39,7 @@ extension DisneyCharacter {
     
     convenience init?(characterDictionary: [String:Any]) {
         guard let name = characterDictionary["name"] as? String,
-              let imageURL = characterDictionary["imageURL"] as? String
+              let imageURL = characterDictionary["imageUrl"] as? String
         else { return nil }
         self.init(name: name, imageURL: imageURL)
     }

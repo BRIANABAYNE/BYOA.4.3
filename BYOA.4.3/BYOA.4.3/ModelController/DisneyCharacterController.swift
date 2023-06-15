@@ -15,7 +15,7 @@ class DisneyCharacterController {
     static func fetchCharacter(completion: @escaping ([DisneyCharacter]?) -> Void) {
         
         // Creating the base URL
-        guard let baseURL = URL(string: "http://api.disneyapi.dev/character") else { return }
+        guard let baseURL = URL(string: "https://api.disneyapi.dev/character") else { return }
         
         // adding the componets - no componets
         
@@ -41,8 +41,7 @@ class DisneyCharacterController {
                 return
             }
             do {
-                guard let topLevelDictonary = try JSONSerialization.jsonObject(with: disneyData) as?
-                        [String:Any],
+                guard let topLevelDictonary = try JSONSerialization.jsonObject(with: disneyData) as? [String:Any],
                       let disneyArray = topLevelDictonary["data"] as? [[String:Any]]
                 else {completion(nil); return }
                 
