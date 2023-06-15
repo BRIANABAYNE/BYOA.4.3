@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		3AF260F12A3A67C50024E745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260F02A3A67C50024E745 /* AppDelegate.swift */; };
 		3AF260F32A3A67C50024E745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260F22A3A67C50024E745 /* SceneDelegate.swift */; };
-		3AF260F52A3A67C50024E745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260F42A3A67C50024E745 /* ViewController.swift */; };
 		3AF260F82A3A67C50024E745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260F62A3A67C50024E745 /* Main.storyboard */; };
 		3AF260FA2A3A67C60024E745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260F92A3A67C60024E745 /* Assets.xcassets */; };
 		3AF260FD2A3A67C60024E745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF260FB2A3A67C60024E745 /* LaunchScreen.storyboard */; };
 		3AF261082A3A6A480024E745 /* DisneyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF261072A3A6A480024E745 /* DisneyCharacter.swift */; };
-		3AF2610B2A3A71360024E745 /* DisneyCharacterModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2610A2A3A71360024E745 /* DisneyCharacterModelController.swift */; };
+		3AF2610D2A3A73A80024E745 /* DisneyCharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2610C2A3A73A80024E745 /* DisneyCharacterController.swift */; };
+		3AF261112A3A800D0024E745 /* DisneyCharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF261102A3A800D0024E745 /* DisneyCharacterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AF260ED2A3A67C50024E745 /* BYOA.4.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYOA.4.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF260F02A3A67C50024E745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF260F22A3A67C50024E745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AF260F42A3A67C50024E745 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AF260F72A3A67C50024E745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AF260F92A3A67C60024E745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF260FC2A3A67C60024E745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF260FE2A3A67C60024E745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF261072A3A6A480024E745 /* DisneyCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacter.swift; sourceTree = "<group>"; };
-		3AF2610A2A3A71360024E745 /* DisneyCharacterModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterModelController.swift; sourceTree = "<group>"; };
+		3AF2610C2A3A73A80024E745 /* DisneyCharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterController.swift; sourceTree = "<group>"; };
+		3AF261102A3A800D0024E745 /* DisneyCharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +60,13 @@
 		3AF260EF2A3A67C50024E745 /* BYOA.4.3 */ = {
 			isa = PBXGroup;
 			children = (
+				3AF2610F2A3A7FDB0024E745 /* ViewController */,
+				3AF2610E2A3A7FBB0024E745 /* Storyboards */,
 				3AF261092A3A71050024E745 /* ModelController */,
 				3AF261062A3A6A250024E745 /* Model */,
 				3AF260F02A3A67C50024E745 /* AppDelegate.swift */,
 				3AF260F22A3A67C50024E745 /* SceneDelegate.swift */,
-				3AF260F42A3A67C50024E745 /* ViewController.swift */,
-				3AF260F62A3A67C50024E745 /* Main.storyboard */,
 				3AF260F92A3A67C60024E745 /* Assets.xcassets */,
-				3AF260FB2A3A67C60024E745 /* LaunchScreen.storyboard */,
 				3AF260FE2A3A67C60024E745 /* Info.plist */,
 			);
 			path = BYOA.4.3;
@@ -84,9 +83,26 @@
 		3AF261092A3A71050024E745 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				3AF2610A2A3A71360024E745 /* DisneyCharacterModelController.swift */,
+				3AF2610C2A3A73A80024E745 /* DisneyCharacterController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		3AF2610E2A3A7FBB0024E745 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260F62A3A67C50024E745 /* Main.storyboard */,
+				3AF260FB2A3A67C60024E745 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3AF2610F2A3A7FDB0024E745 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AF261102A3A800D0024E745 /* DisneyCharacterTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF260F52A3A67C50024E745 /* ViewController.swift in Sources */,
-				3AF2610B2A3A71360024E745 /* DisneyCharacterModelController.swift in Sources */,
 				3AF261082A3A6A480024E745 /* DisneyCharacter.swift in Sources */,
+				3AF261112A3A800D0024E745 /* DisneyCharacterTableViewController.swift in Sources */,
+				3AF2610D2A3A73A80024E745 /* DisneyCharacterController.swift in Sources */,
 				3AF260F12A3A67C50024E745 /* AppDelegate.swift in Sources */,
 				3AF260F32A3A67C50024E745 /* SceneDelegate.swift in Sources */,
 			);
